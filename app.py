@@ -20,7 +20,7 @@ def predict():
 
     
 
-    return render_template('index.html', prediction_text='SOC of Battery:'.format(prediction))
+    return render_template('index.html', prediction_text='SOC of Battery: {}'.format(prediction))
 
 
 if __name__ == "__main__":
