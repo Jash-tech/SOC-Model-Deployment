@@ -17,16 +17,16 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="Time [s]" placeholder="Time" required="required" />
-        <input type="text" name="Velocity [km/h]" placeholder="Velocity" required="required" />
-		<input type="text" name="Elevation [m]" placeholder="Elevation" required="required" />
-              <input type="text" name="Throttle [%]" placeholder="Throttle" required="required" />
-                <input type="text" name="Motor Torque [Nm]" placeholder="Motor Torque" required="required" />
-                  <input type="text" name="Longitudinal Acceleration [m/s^2]" placeholder="Longitudinal Acceleration" required="required" />
-                    <input type="text" name="Battery Voltage [V]" placeholder="Battery Voltage" required="required" />
-                      <input type="text" name="Battery Current [A]" placeholder="Battery Current" required="required" />
-                         <input type="text" name="Battery Temperature [°C]" placeholder="Battery Temperature" required="required" />
-                           <input type="text" name="max. Battery Temperature [°C]" placeholder="Max Battery Temperature" required="required" />
+    	<input type="number" name="Time [s]" placeholder="Time" required="required" />
+        <input type="number" name="Velocity [km/h]" placeholder="Velocity" required="required" />
+		<input type="number" name="Elevation [m]" placeholder="Elevation" required="required" />
+              <input type="number" name="Throttle [%]" placeholder="Throttle" required="required" />
+                <input type="number" name="Motor Torque [Nm]" placeholder="Motor Torque" required="required" />
+                  <input type="number" name="Longitudinal Acceleration [m/s^2]" placeholder="Longitudinal Acceleration" required="required" />
+                    <input type="number" name="Battery Voltage [V]" placeholder="Battery Voltage" required="required" />
+                      <input type="number" name="Battery Current [A]" placeholder="Battery Current" required="required" />
+                         <input type="number" name="Battery Temperature [°C]" placeholder="Battery Temperature" required="required" />
+                           <input type="number" name="max. Battery Temperature [°C]" placeholder="Max Battery Temperature" required="required" />
               
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
